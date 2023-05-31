@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      /* height: 100vh; */
+    flex-direction: column;
+}
+
+.body-section {
+    width: 100%;
+}
+
+.form-register{
+    width: 324px;
+    padding-top: 28px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.form-register .form-control {
+    border: solid 1px var(--primary-color);
+}
+
+.form-register p,
+.form-register a {
+    font-size: 12px;
+    color: rgba(35, 31, 30, 0.6);
+}
+
+.form-register button {
+    width: 100%;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    border-radius: 0;
+}
+
+.footer-section {
+    display: block;
+}

@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop Shoe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Link reset lại css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="header-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"><img
+            src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg" alt="LOGO"
+            height="40" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">New & Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessories</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <form action="" role="search" class="form-search">
+                <input class="input-search" type="search" placeholder="Search" required>
+                <i class="search-icon bi bi-search"></i>
+                <a href="javascript:void(0)" class="clear-btn"></a>
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person"></i>
+                Account
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./signin.html">Sign In</a></li>
+                <li><a class="dropdown-item" href="./register.html">Register</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="./cart.html" role="button">
+                <i class="bi bi-cart-plus"></i>
+                Cart
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                  0
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="body-section mb-5">
+    <div class="container-fluid">
+      <div class="row mt-3">
+        <div class="col-2 ps-4 pe-3">
+            <div class="category-box">
+              <div class="category-title">
+                <div class="d-flex justify-content-between my-2">
+                  <span>Gender</span>
+                  <span><i class="bi bi-dash-lg"></i></span>
+                </div>
+              </div>
+              <div class="category-content">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="male">
+                    <label class="form-check-label" for="male">Male</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="female">
+                    <label class="form-check-label" for="female">Female</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="unisex">
+                    <label class="form-check-label" for="unisex">Unisex</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="category-box">
+              <div class="category-title">
+                <div class="d-flex justify-content-between">
+                  <span>Brand</span>
+                  <span><i class="bi bi-dash-lg"></i></span>
+                </div>
+              </div>
+              <div class="category-content">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="nike">
+                    <label class="form-check-label" for="nike">Nike</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="adidas">
+                    <label class="form-check-label" for="adidas">Adidas</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="jordan">
+                    <label class="form-check-label" for="jordan">Jordan</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="puma">
+                    <label class="form-check-label" for="puma">Puma</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="converse">
+                    <label class="form-check-label" for="converse">Converse</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="crocs">
+                    <label class="form-check-label" for="crocs">Crocs</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="asics">
+                    <label class="form-check-label" for="asics">Asics</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="nb">
+                    <label class="form-check-label" for="nb">New Balance</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="champion">
+                    <label class="form-check-label" for="champion">Champion</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="reebok">
+                    <label class="form-check-label" for="reebok">Reebok</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="category-box">
+              <div class="category-title">
+                <div class="d-flex justify-content-between">
+                  <span>Size</span>
+                  <span><i class="bi bi-dash-lg"></i></span>
+                </div>
+              </div>
+              <div class="category-content">
+                <ul class="row">
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>5</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>6</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>6.5</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>8</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>12</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>15</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>28</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>30</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>34</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>36</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>38</span></button>
+                  </li>
+                  <li role="presentation" class="col list-size">
+                    <button class="btn btn-outline-dark btn-category-size"><span>39</span></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="category-box">
+              <div class="category-title">
+                <div class="d-flex justify-content-between my-2">
+                  <span>Price</span>
+                  <span><i class="bi bi-dash-lg"></i></span>
+                </div>
+              </div>
+              <div class="category-content">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="price1">
+                    <label class="form-check-label" for="price1">Dưới 1 triệu</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="price2">
+                    <label class="form-check-label" for="price2">Từ 1 triệu - 1.5 triệu</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="price3">
+                    <label class="form-check-label" for="price3">Từ 1.5 triệu - 2 triệu</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="price4">
+                    <label class="form-check-label" for="price4">Từ 2 triệu - 2.5 triệu</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="price5">
+                    <label class="form-check-label" for="price5">Từ 2.5 triệu - 3 triệu</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="price5">
+                    <label class="form-check-label" for="price5">Từ 3 triệu - 3.5 triệu</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="price5">
+                    <label class="form-check-label" for="price5">Trên 3.5 triệu</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="category-box">
+              <div class="category-title">
+                <div class="d-flex justify-content-between my-2">
+                  <span>Color</span>
+                  <span><i class="bi bi-dash-lg"></i></span>
+                </div>
+              </div>
+              <div class="category-content">
+                <ul class="list-group row">
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn white">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">White</span>
+                    </button>
+                  </li>
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn black">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">Black</span>
+                    </button>
+                  </li>
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn pink">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">Pink</span>
+                    </button>
+                  </li>
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn grey">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">Grey</span>
+                    </button>
+                  </li>
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn blue">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">Blue</span>
+                    </button>
+                  </li>
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn beige">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">Beige</span>
+                    </button>
+                  </li>
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn red">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">Red</span>
+                    </button>
+                  </li>
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn brown">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">Brown</span>
+                    </button>
+                  </li>
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn green">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">Green</span>
+                    </button>
+                  </li>
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn orange">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">Orange</span>
+                    </button>
+                  </li>
+                  <li role="presentation" id="list-color" class="list-group-item col ">
+                    <button type="button" class="color-filter btn yellow">
+                      <span class="bi bi-check2"></span>
+                      <span class="color-name">Yellow</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="category-box">
+              <div class="category-title">
+                <div class="d-flex justify-content-between my-2">
+                  <span>Activity</span>
+                  <span><i class="bi bi-dash-lg"></i></span>
+                </div>
+              </div>
+              <div class="category-content">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="casual">
+                    <label class="form-check-label" for="casual">Casual</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="running">
+                    <label class="form-check-label" for="running">Running</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="basketball">
+                    <label class="form-check-label" for="basketball">Basketball</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="soccer">
+                    <label class="form-check-label" for="soccer">Soccer</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="tennis">
+                    <label class="form-check-label" for="tennis">Tennis</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="hiking">
+                    <label class="form-check-label" for="hiking">Hiking</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="col-10 px-4 pt-5">
+          <div class="d-flex justify-content-between">
+            <h2>WOMEN'S SHOE (1402)</h2>
+            <div class="btn-group">
+              <button id="sortButton" type="button" class="btn btn-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="fase">
+                Sort By
+                <i id="sortIcon" class="bi bi-chevron-down"></i>
+                <!-- <i class="bi bi-chevron-up"></i> -->
+              </button>
+              <ul class="dropdown-menu text-end">
+                <li><a href="#" class="dropdown-item" onclick="updateSortOption('Featured')">Featured</a></li>
+                <li><a href="#" class="dropdown-item" onclick="updateSortOption('Newest')">Newest</a></li>
+                <li><a href="#" class="dropdown-item" onclick="updateSortOption('Price: High-Low')">Price: High-Low</a></li>
+                <li><a href="#" class="dropdown-item" onclick="updateSortOption('Price: Low-High')">Price: Low-High</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-2 mt-3">
+            <div class="col-3">
+              <div class="product-card">
+                <a href="./items.html" class="card">
+                  <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dff6d697-05b5-472f-958e-eed3aec15dc9/pegasus-trail-4-gore-tex-waterproof-trail-running-shoes-Z9t8Fh.png" alt="Nike Blazer Low '77 Vintage" class="card-img-top">
+                  <span class="product-color">3 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Nike Blazer Low '77 Vintage</h5>
+                    <p class="card-subtitle">4,699,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star-half-stroke" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(61)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3 ">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/560846F_102_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Women's Converse Chuck Taylor All Star Casual Shoes" class="card-img-top">
+                  <span class="product-color">6 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Women's Converse Chuck Taylor All Star Casual Shoes</h5>
+                    <p class="card-subtitle">1,760,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(9)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/DH7004_501_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Women's Air Jordan Retro 1 Elevate Low Casual Shoes" class="card-img-top">
+                  <span class="product-color">5 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Women's Air Jordan Retro 1 Elevate Low Casual Shoes</h5>
+                    <p class="card-subtitle">3,170,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(9)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/DH0833_063_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Air Jordan Xxxvi Low Basketball Shoes" class="card-img-top">
+                  <span class="product-color">1 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Air Jordan Xxxvi Low Basketball Shoes</h5>
+                    <p class="card-subtitle">3,170,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star-half-stroke" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(1)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f031c6e2-5941-4bb7-a29d-31683f5d4da2/blazer-low-77-vintage-shoes-HmmkdX.png" alt="Nike Blazer Low '77 Vintage" class="card-img-top">
+                  <span class="product-color">1 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Nike Blazer Low '77 Vintage</h5>
+                    <p class="card-subtitle">2,499,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-regular fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-regular fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-regular fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-regular fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-regular fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(0)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/38918001_060_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Women's Puma Trc Mira Retro Grade Casual Shoes" class="card-img-top">
+                  <span class="product-color">1 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Women's Puma Trc Mira Retro Grade Casual Shoes</h5>
+                    <p class="card-subtitle">2,230,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(1)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/78e7279a-d619-4422-bc6e-81437a920864/zegama-trail-running-shoes-LhRsM7.png" alt="Nike Zegama" class="card-img-top">
+                  <span class="product-color">5 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Nike Zegama</h5>
+                    <p class="card-subtitle">4,409,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star-half-stroke" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(35)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/10001C_100_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Unisex Crocs Classic Clog Shoes" class="card-img-top">
+                  <span class="product-color">9 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Unisex Crocs Classic Clog Shoes</h5>
+                    <p class="card-subtitle">1,175,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(2249)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/DB3603_BKG_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Men's Adidas Originals Swift Run Casual Shoes" class="card-img-top">
+                  <span class="product-color">3 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Men's Adidas Originals Swift Run Casual Shoes</h5>
+                    <p class="card-subtitle">2,110,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(3083)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/ID9823_033_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Adidas Originals Ozweego Casual Shoes" class="card-img-top">
+                  <span class="product-color">8 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Adidas Originals Ozweego Casual Shoes</h5>
+                    <p class="card-subtitle">3,052,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(2435)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="./assets/image/puma_shoes.jpg" alt="Men's Puma Rs-Trck Super Casual Shoes" class="card-img-top">
+                  <span class="product-color">1 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Men's Puma Rs-Trck Super Casual Shoes</h5>
+                    <p class="card-subtitle">2,818,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-regular fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-regular fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-regular fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-regular fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-regular fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(0)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/M9166_BLK_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Converse Chuck Taylor All Star Low Top Casual Shoes" class="card-img-top">
+                  <span class="product-color">5 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Converse Chuck Taylor All Star Low Top Casual Shoes</h5>
+                    <p class="card-subtitle">1,410,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(30)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-shoes-WrLlWX.png" alt="Nike Air Force 1 '07" class="card-img-top">
+                  <span class="product-color">2 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Nike Air Force 1 '07</h5>
+                    <p class="card-subtitle">2,929,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(1044)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/37491507_060_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Puma Suede Classic 21 Casual Shoes" class="card-img-top">
+                  <span class="product-color">5 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Puma Suede Classic 21 Casual Shoes</h5>
+                    <p class="card-subtitle">1,644,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(44)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/GX6950_273_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Adidas Originals Adilette 22 Slide Sandals" class="card-img-top">
+                  <span class="product-color">8 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">Adidas Originals Adilette 22 Slide Sandals</h5>
+                    <p class="card-subtitle">1,292,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star-half-stroke" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(49)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="product-card">
+                <a href="#" class="card">
+                  <img src="https://media.jdsports.com/i/jdsports/ML574EVG_030_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="New Balance 574 Casual Shoes" class="card-img-top">
+                  <span class="product-color">15 colors</span>
+                  <hr class="my-2">
+                  <div class="card-body">
+                    <h5 class="card-title">New Balance 574 Casual Shoes</h5>
+                    <p class="card-subtitle">1,996,000
+                      <span>đ</span>
+                    </p>
+                    <div class="product-review">
+                      <ul class="list-unstyled list-inline product-star">
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star" style="color:#ffa401;"></i>
+                        </li>
+                        <li class="list-inline-item me-0">
+                          <i class="fa-solid fa-star-half-stroke" style="color:#ffa401;"></i>
+                        </li>
+                      </ul>
+                      <span class="product-bought">(1419)</span>
+                    </div> 
+                    <a href="#" class="btn btn-outline-dark btn-product">Add to Cart</a>
+                    <span class="product-like"><i id="favorIcon" class="bi bi-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-section footer text-bg-dark pt-5">
+    <div class="container">
+      <div class="row gx-5">
+        <div class="col-md-3 text-white-50">
+          <a href="#" class="icon-link">
+            <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg" alt="LOGO" class="rounded float-start">
+          </a>
+          <ul class="list-unstyled pt-2">
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              <span>Khu Công nghệ cao TP.HCM (SHTP), Xa lộ Hà Nội, P. Hiệp Phú, TP. Thủ Đức, TP.HCM</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              <span>0123456789</span>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-white-50">
+                <i class="bi bi-envelope"></i>
+                <span>abc@hutech.edu.vn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex justify-content-center flex-column">
+            <h4 class="fw-bold">Customer Service</h4>
+            <ul class="list-unstyled pt-2">
+              <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Shipping Information</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Returns & Exchanges</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex justify-content-center flex-column">
+            <h4 class="fw-bold">Follow Us</h4>
+            <ul class="list-unstyled pt-2">
+              <li>
+                <a href="#" class="text-white-50 text-decoration-none">Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="text-white-50 text-decoration-none">Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="text-white-50 text-decoration-none">Instagram</a>
+              </li>
+              <li>
+                <a href="#" class="text-white-50 text-decoration-none">Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex justify-content-center flex-column">
+            <h4 class="fw-bold">Legal</h4>
+            <ul class="list-unstyled pt-2">
+              <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Targeted Ads Note</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Terms Of Use</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Site Map</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2023 DayLaNhomDoAn. Take By Linh. <span class="bi bi-emoji-laughing"></span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+  integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./assets/js/main.js"></script>
+</html>
