@@ -37,6 +37,12 @@
     border-radius: 0;
 }
 
+.icon-show-passwd {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+}
+
 .footer-section {
     display: block;
 }
