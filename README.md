@@ -5,3 +5,9 @@ Front-End v1
 
 Front-end v2
 - Thêm trang thay đổi thông tin, đổi pass
+
+Front-end v3
+- Ở trang Admin, thì giữ nguyên thanh sidebar, thay đổi trang ở phần còn lại
+- Giao diện thêm, xoá, sửa sản phẩm, brand (Mốt thêm vào trang admin.html á)
+- Hiện thị list product (có tìm kiếm, hiển thị theo dòng), mốt thêm vào admin.html luôn. Note: Nhớ copy hết link ở head, script.
+- Giao diện Cart
