@@ -13,6 +13,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 <body>
@@ -79,8 +80,195 @@
     </div>
 
     <div class="body-section">
-
+      <div class="container-fluid">
+        <div class="row">
+          <!-- <div class="col-12 py-5 my-5">
+            <div class="cart-empty text-center">
+              <h1>YOUR CART IS EMPTY</h1>
+            </div>
+          </div> -->
+          <div class="col-9">
+            <table class="table align-middle table-bordered text-center">
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col" style="width:10%;">Image</th>
+                  <th scope="col" style="width:40%;">Product</th>
+                  <th scope="col" style="width:15%;">Price</th>
+                  <th scope="col" style="width:14%;">Quantity</th>
+                  <th scope="col" style="width:15%;">Subtotal</th>
+                  <th scope="col" style="width:6%;">Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dff6d697-05b5-472f-958e-eed3aec15dc9/pegasus-trail-4-gore-tex-waterproof-trail-running-shoes-Z9t8Fh.png" alt="Nike Blazer Low '77 Vintage" class="cart-item-img rounded">
+                  </th>
+                  <td>
+                    <h5 class="cart-item-title">Nike Blazer Low '77 Vintage</h5>
+                    <p class="cart-item-contain">Purple | 36</p>
+                  </td>
+                  <td>
+                    4,699,000<span>đ</span>
+                  </td>
+                  <td>
+                    <div class="input-group quantity-input">
+                      <input type="text" class="form-control quantity-number bg-white" name="quantity-number" value="1" min="1" disabled>
+                      <div class="btn-quantity">
+                        <button type="button" class="btn quantity-count quantity-count--minus border border-start-0" data-action="minus">
+                          <i class="bi bi-dash"></i>
+                        </button>
+                        <button type="button" class="btn quantity-count quantity-count--add border border-start-0" data-action="add">
+                          <i class="bi bi-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    4,699,000<span>đ</span></td>
+                  <td>
+                    <span class="btn bi bi-trash3" role="button"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <img src="https://media.jdsports.com/i/jdsports/DH7004_501_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" alt="Women's Air Jordan Retro 1 Elevate Low Casual Shoes" class="cart-item-img rounded">
+                  </th>
+                  <td>
+                    <h5 class="cart-item-title">Women's Air Jordan Retro 1 Elevate Low Casual Shoes</h5>
+                    <p class="cart-item-contain">Pink | 38</p>
+                  </td>
+                  <td>
+                    3,170,000<span>đ</span>
+                  </td>
+                  <td>
+                    <div class="input-group quantity-input">
+                      <input type="text" class="form-control quantity-number bg-white" name="quantity-number" value="1" min="1" disabled>
+                      <div class="btn-quantity">
+                        <button type="button" class="btn quantity-count quantity-count--minus border border-start-0" data-action="minus">
+                          <i class="bi bi-dash"></i>
+                        </button>
+                        <button type="button" class="btn quantity-count quantity-count--add border border-start-0" data-action="add">
+                          <i class="bi bi-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    3,170,000<span>đ</span></td>
+                  <td>
+                    <span class="btn bi bi-trash3" role="button"></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-end">
+              <button class="btn btn-success px-4 py-2">Update</button>
+            </div>
+          </div>
+          <div class="col-3">
+            <h2 class="text-center fw-semibold">SUMMARY</h2>
+            <table cellspacing="0" class="table cart-summary">
+              <tbody>
+                <tr class="cart-subtotal">
+                    <th>Subtotal</th>
+                    <td data-title="Subtotal">7,869,000<span>đ</span>
+                    </td>
+                </tr>
+                <tr class="cart-subtotal">
+                  <th>Total</th>
+                  <td data-title="Total">7,869,000<span>đ</span>
+                  </td>
+              </tr>
+              </tbody>
+            </table>
+            <div class="text-center">
+              <a href="./index.html" class="btn btn-outline-secondary btn-cart-summary">
+                <i class="bi bi-arrow-left-circle-fill pe-1"></i>
+                KEEP BUYING</a>
+              <a href="./paying.html" class="btn btn-outline-dark btn-cart-summary">
+                <i class="bi bi-credit-card pe-1"></i>
+                CHECKOUT</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <footer class="footer-section footer text-bg-dark pt-5">
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-md-3 text-white-50">
+            <a href="#" class="icon-link">
+              <img src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg" alt="LOGO" class="rounded float-start">
+            </a>
+            <ul class="list-unstyled pt-2">
+              <li>
+                <i class="bi bi-geo-alt"></i>
+                <span>Khu Công nghệ cao TP.HCM (SHTP), Xa lộ Hà Nội, P. Hiệp Phú, TP. Thủ Đức, TP.HCM</span>
+              </li>
+              <li>
+                <i class="bi bi-telephone"></i>
+                <span>0123456789</span>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white-50">
+                  <i class="bi bi-envelope"></i>
+                  <span>abc@hutech.edu.vn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center flex-column">
+              <h4 class="fw-bold">Customer Service</h4>
+              <ul class="list-unstyled pt-2">
+                <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Shipping Information</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Returns & Exchanges</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center flex-column">
+              <h4 class="fw-bold">Follow Us</h4>
+              <ul class="list-unstyled pt-2">
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none">Facebook</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none">Twitter</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none">Instagram</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none">Youtube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center flex-column">
+              <h4 class="fw-bold">Legal</h4>
+              <ul class="list-unstyled pt-2">
+                <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Targeted Ads Note</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Terms Of Use</a></li>
+                <li><a href="#" class="text-white-50 text-decoration-none">Site Map</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2023 DayLaNhomDoAn. Take By Linh. <span class="bi bi-emoji-laughing"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -89,5 +277,6 @@
   integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./assets/js/main.js"></script>
+<script src="./assets/js/cart.js"></script>
 
 </html>
