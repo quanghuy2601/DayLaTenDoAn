@@ -11,3 +11,6 @@ Front-end v3
 - Giao diện thêm, xoá, sửa sản phẩm, brand (Mốt thêm vào trang admin.html á)
 - Hiện thị list product (có tìm kiếm, hiển thị theo dòng), mốt thêm vào admin.html luôn. Note: Nhớ copy hết link ở head, script.
 - Giao diện Cart
+
+Front-end v4
+- Giao diện danh sách đơn hàng (listOrder), danh sách khách hàng (listUser)
