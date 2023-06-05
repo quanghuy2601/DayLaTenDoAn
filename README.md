@@ -14,3 +14,5 @@ Front-end v3
 
 Front-end v4
 - Giao diện danh sách đơn hàng (listOrder), danh sách khách hàng (listCustomer)
+- Giao diện thanh toán
+- Sửa lại button trong item.html phần chọn màu, size
