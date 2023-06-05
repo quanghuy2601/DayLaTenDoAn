@@ -9,7 +9,46 @@ if (toastTrigger) {
   })
 }
 
-//
+//Click button color
+const btnColors = document.querySelectorAll('.btn-clicked');
+
+btnColors.forEach(function(button) {
+  button.addEventListener('click', function() {
+    const isActive = this.classList.contains('btn-clicked');
+
+    if (isActive) {
+      this.classList.remove('btn-clicked');
+      this.classList.add('border-dark');
+    }
+    else {
+      this.classList.remove('border-dark');
+      this.classList.add('btn-clicked');
+    }
+  });
+});
+
+
+//Click button size
+const btnSizes = document.querySelectorAll('.btn-size-clicked');
+
+btnSizes.forEach(function(button) {
+  button.addEventListener('click', function() {
+    const isActive = this.classList.contains('btn-size-clicked');
+
+    if (isActive) {
+      this.classList.remove('btn-size-clicked');
+      this.classList.add('bg-dark', 'text-white');
+    }
+    else {
+      this.classList.remove('bg-dark', 'text-white');
+      this.classList.add('btn-size-clicked');
+    }
+  });
+});
+
+
+
+//Quantity button
 const minus = document.querySelector("#quantity-count--minus")
 const plus = document.querySelector("#quantity-count--add")
 const input = document.querySelector(".quantity-number")
