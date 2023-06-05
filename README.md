@@ -13,4 +13,4 @@ Front-end v3
 - Giao diện Cart
 
 Front-end v4
-- Giao diện danh sách đơn hàng (listOrder), danh sách khách hàng (listUser)
+- Giao diện danh sách đơn hàng (listOrder), danh sách khách hàng (listCustomer)
