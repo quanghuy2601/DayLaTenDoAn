@@ -9,7 +9,7 @@ if (toastTrigger) {
   })
 }
 
-//
+//  
 const minus = document.querySelector("#quantity-count--minus")
 const plus = document.querySelector("#quantity-count--add")
 const input = document.querySelector(".quantity-number")
