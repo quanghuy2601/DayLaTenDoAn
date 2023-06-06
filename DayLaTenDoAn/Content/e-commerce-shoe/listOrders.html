@@ -24,55 +24,55 @@
         <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
     </head>
 <body>
-    <div class="header-section">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
-          <div class="container-fluid">
-            <a href="./addItem.html" class="navbar-brand"><img
-                src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg" alt="LOGO"
-                height="40" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">New & Featured</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Men</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Women</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Kids</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Accessories</a>
-                </li>
+  <div class="header-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <div class="container-fluid">
+        <a href="./addItem.html" class="navbar-brand"><img
+            src="https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e86ab4c21faa7bc0bd90dd_Logo.svg" alt="LOGO"
+            height="40" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">New & Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessories</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <form action="" role="search" class="form-search">
+                <input class="input-search" type="search" placeholder="Search" required>
+                <i class="search-icon bi bi-search"></i>
+                <a href="javascript:void(0)" class="clear-btn"></a>
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person"></i>
+                Account
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./signin.html">Sign In</a></li>
+                <li><a class="dropdown-item" href="./register.html">Register</a></li>
               </ul>
-              <ul class="navbar-nav justify-content-end">
-                <li class="nav-item">
-                  <form action="" role="search" class="form-search">
-                    <input class="input-search" type="search" placeholder="Search" required>
-                    <i class="search-icon bi bi-search"></i>
-                    <a href="javascript:void(0)" class="clear-btn"></a>
-                  </form>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-person"></i>
-                    Account
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./signin.html">Sign In</a></li>
-                    <li><a class="dropdown-item" href="./register.html">Register</a></li>
-                  </ul>
-                </li>
-    
-                <!-- Đã đăng nhập -->
-                <!-- <li class="nav-item dropdown">
+            </li>
+
+            <!-- Đã đăng nhập -->
+            <!-- <li class="nav-item dropdown">
                   <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="bi bi-person"></i>
                     Hi, Linh
@@ -83,102 +83,162 @@
                     <li><a class="dropdown-item" href="./signin.html">Sign Out</a></li>
                   </ul>
                 </li> -->
-                <li class="nav-item">
-                  <a class="nav-link position-relative" href="./cart.html" role="button">
-                    <i class="bi bi-cart-plus"></i>
-                    Cart
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
-                      0
-                      <span class="visually-hidden">unread messages</span>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    <div class="body-section px-3 my-5">
-        <div class="contaner dataTables_wrapper">
-            <h2 class="text-center">ORDER LIST</h2>
-            <div class="row">
-                <div class="col-12 mt-3">
-                    <table id="example" class="table table-stripped align-middle text-center" style="width:100%">
-                        <thead class="table-dark text-center">
-                            <tr>
-                                <th>ID</th>
-                                <th>Order date</th>
-                                <th>Product</th>
-                                <th>Quantity</th>
-                                <th>Purchased price</th>
-                                <th>Payment</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><p class="product-item-contain">01</p></td>
-                                <td><p class="product-item-contain">31/05/2023 11:23:03</p></td>
-                                <td><p class="product-item-contain">Women's Converse Chuck Taylor All Star Lift Platform Casual Shoes</p></td>
-                                <td><p class="product-item-contain">1</p></td>
-                                <td><p class="product-item-contain">1,761,000<span>đ</span></p></td>
-                                <td><p class="product-item-contain">On delivery</p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="product-item-contain">02</p></td>
-                                <td><p class="product-item-contain">31/05/2023 13:43:03</p></td>
-                                <td><p class="product-item-contain">Women's Converse Chuck Taylor All Star Lift Platform Casual Shoes</p></td>
-                                <td><p class="product-item-contain">2</p></td>
-                                <td><p class="product-item-contain">3,522,000<span>đ</span></p></td>
-                                <td><p class="product-item-contain">Via MOMO</p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="product-item-contain">03</p></td>
-                                <td><p class="product-item-contain">31/05/2023 11:23:03</p></td>
-                                <td><p class="product-item-contain">Women's Converse Chuck Taylor All Star Lift Platform Casual Shoes</p></td>
-                                <td><p class="product-item-contain">1</p></td>
-                                <td><p class="product-item-contain">1,761,000<span>đ</span></p></td>
-                                <td><p class="product-item-contain">On delivery</p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="product-item-contain">04</p></td>
-                                <td><p class="product-item-contain">31/05/2023 13:43:03</p></td>
-                                <td><p class="product-item-contain">Women's Converse Chuck Taylor All Star Lift Platform Casual Shoes</p></td>
-                                <td><p class="product-item-contain">2</p></td>
-                                <td><p class="product-item-contain">3,522,000<span>đ</span></p></td>
-                                <td><p class="product-item-contain">Via MOMO</p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="product-item-contain">05</p></td>
-                                <td><p class="product-item-contain">31/05/2023 11:23:03</p></td>
-                                <td><p class="product-item-contain">Women's Converse Chuck Taylor All Star Lift Platform Casual Shoes</p></td>
-                                <td><p class="product-item-contain">1</p></td>
-                                <td><p class="product-item-contain">1,761,000<span>đ</span></p></td>
-                                <td><p class="product-item-contain">On delivery</p></td>
-                            </tr>
-                            <tr>
-                                <td><p class="product-item-contain">06</p></td>
-                                <td><p class="product-item-contain">31/05/2023 13:43:03</p></td>
-                                <td><p class="product-item-contain">Women's Converse Chuck Taylor All Star Lift Platform Casual Shoes</p></td>
-                                <td><p class="product-item-contain">2</p></td>
-                                <td><p class="product-item-contain">3,522,000<span>đ</span></p></td>
-                                <td><p class="product-item-contain">Via MOMO</p></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr class="text-center">
-                                <th>ID</th>
-                                <th>Order date</th>
-                                <th>Product</th>
-                                <th>Quantity</th>
-                                <th>Purchased price</th>
-                                <th>Payment</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="./cart.html" role="button">
+                <i class="bi bi-cart-plus"></i>
+                Cart
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                  0
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </div>
+  <div class="body-section px-3 my-5">
+    <div class="contaner dataTables_wrapper">
+      <div class="row">
+        <div class="col-6 mt-3 pe-2">
+          <h2 class="text-center mb-4">ORDER LIST</h2>
+          <table id="example" class="table table-stripped table-hover align-middle text-center" style="width:100%">
+            <thead class="table-dark text-center">
+              <tr>
+                <th>ID Order</th>
+                <th>Order date</th>
+                <th>ID Product</th>
+                <th>Purchased price</th>
+                <th>Payment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p class="product-item-contain">01</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">31/05/2023 11:23:03</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">032</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">1,761,000<span>đ</span></p>
+                </td>
+                <td>
+                  <p class="product-item-contain">On delivery</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="product-item-contain">02</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">31/05/2023 13:43:03</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">033</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">3,522,000<span>đ</span></p>
+                </td>
+                <td>
+                  <p class="product-item-contain">Via MOMO</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="product-item-contain">03</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">31/05/2023 11:23:03</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">034</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">1,761,000<span>đ</span></p>
+                </td>
+                <td>
+                  <p class="product-item-contain">On delivery</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="product-item-contain">04</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">31/05/2023 13:43:03</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">035</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">3,522,000<span>đ</span></p>
+                </td>
+                <td>
+                  <p class="product-item-contain">Via MOMO</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="product-item-contain">05</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">31/05/2023 11:23:03</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">036</p>
+                </td>
+                <td>
+                  <p class="product-item-contain">1,761,000<span>đ</span></p>
+                </td>
+                <td>
+                  <p class="product-item-contain">On delivery</p>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="text-center">
+                <th>ID</th>
+                <th>Order date</th>
+                <th>Product</th>
+                <th>Purchased price</th>
+                <th>Payment</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="col-6 mt-3 ps-2">
+          <h2 class="text-center" style="padding-bottom: 58px;">PRODUCT LIST</h2>
+          <table id="example" class="table table-stripped align-middle text-center" style="width:100%">
+            <thead class="table-dark text-center">
+              <tr>
+                <th style="width: 4%;">ID</th>
+                <th style="width: 35%;">Product</th>
+                <th>ID Customer</th>
+                <th>Quantity</th>
+                <th>Basic Price</th>
+                <th>Total Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><p class="product-item-contain">033</p></td>
+                <td><p class="product-item-contain">Women's Air Jordan Retro 1 Elevate Low Casual Shoes</p></td>
+                <td><p class="product-item-contain">001</p></td>
+                <td><p class="product-item-contain">1</p></td>
+                <td><p class="product-item-contain">3,170,000<span>đ</span></p></td>
+                <td><p class="product-item-contain">3,170,000<span>đ</span></p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

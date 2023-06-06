@@ -4,7 +4,7 @@
 }
 
 .product-empty {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .product-item-img {
@@ -13,7 +13,7 @@
 }
 
 .product-item-contain {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 24px;
     color: var(--primary-color);
     margin: 0;

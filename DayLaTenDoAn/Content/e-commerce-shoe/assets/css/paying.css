@@ -1,0 +1,45 @@
+.order-space {
+    padding: 20px;
+}
+
+h4 {
+    font-weight: 600!important;
+}
+
+
+.order-name, 
+.order-price {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.order-name {
+    margin: 0;
+    padding-right: 8px;
+    width: 250px;
+    height: 40px;
+    overflow: hidden;           
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.order-quantity {
+    font-weight: 700;
+}
+
+.form-check-label {
+    width: 90%;
+}
+
+.order-img {
+    height: 60px;
+}
+
+.btn-order {
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 6px;
+    font-weight: 600 !important;
+}

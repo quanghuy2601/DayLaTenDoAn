@@ -92,3 +92,7 @@
     width: 90%;
     margin-bottom: 6px;
 }
+
+.border-padding {
+    padding: 14px;
+}
